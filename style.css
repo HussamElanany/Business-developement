@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+#taskInput,
+#deadlineInput {
+    width: 40%;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+#addTaskBtn {
+    padding: 8px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.deleteTaskBtn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+}

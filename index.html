@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>To-Do List</title>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js" type="module"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <header>
+            <h1>ToDo List</h1>
+            <div>
+                <input type="text" id="taskInput" placeholder="Enter task">
+                <input type="date" id="deadlineInput">
+                <button class="btn btn-primary" id="addTaskBtn">Add Task</button>
+            </div>
+        </header>
+
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Deadline</th>
+                </tr>
+            </thead>
+            <tbody id="taskList">
+                <!-- Task items will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
